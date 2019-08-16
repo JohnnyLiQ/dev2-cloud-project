@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  redis:
+    host: 10.1.2.181
+    port: 6379
+    password: edai@168
+    database: 1
+    jedis:
+      pool:
+        max-active: 8
+#        max-wait: -1
+        max-idle: 500
+        min-idle: 0
+#    timeout: 0
+
+  feign.hystrix.enabled: true #在D版本的Spring Cloud之后，断路由没有默认打开。需要在配置文件中配置打开它
+mybatis-plus:
+  mapper-locations: classpath*:mapper/agent/*.xml
+  type-aliases-package: mel.mjj.*.entity

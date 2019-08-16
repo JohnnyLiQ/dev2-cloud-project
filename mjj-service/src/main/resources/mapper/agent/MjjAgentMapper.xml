@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mel.mjj.agent.mapper.MjjAgentDao">
+
+	<resultMap id="BaseResultMap" type="mel.mjj.agent.entity.MjjAgent">
+		<id column="id" property="id" />
+		<id column="status" property="status" />
+		<id column="createdOn" property="createdOn" />
+		<id column="createdBy" property="createdBy" />
+		<id column="modifiedOn" property="modifiedOn" />
+		<id column="modifiedBy" property="modifiedBy" />
+		<id column="nickName" property="nickName" />
+		<id column="avatar" property="avatar" />
+		<id column="examineTime" property="examineTime" />
+		<id column="examineState" property="examineState" />
+		<id column="agentState" property="agentState" />
+		<id column="agentOccupationType" property="agentOccupationType" />
+		<id column="ssoAccount" property="ssoAccount" />
+		<id column="invitater" property="invitater" />
+		<id column="examineAccount" property="examineAccount" />
+		<id column="marketingOrg" property="marketingOrg" />
+		<id column="manageAgentGroup" property="manageAgentGroup" />
+		<id column="agentSetting" property="agentSetting" />
+		<id column="agentGroup" property="agentGroup" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		id, status, createdOn, createdBy, modifiedOn, modifiedBy, nickName, avatar, examineTime, examineState, agentState, agentOccupationType, ssoAccount, invitater, examineAccount, marketingOrg, manageAgentGroup, agentSetting, agentGroup
+	</sql>
+	
+</mapper>

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: mjj-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 10.1.2.209:8848
+        namespace: 3ee290bf-6314-489b-9dc2-c014ad1fdb28
+        group: dev

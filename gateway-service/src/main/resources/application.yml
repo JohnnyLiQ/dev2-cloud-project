@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.1.2.209:8848
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      routes:
+      - id: mjj-service
+        uri: lb://MJJ-SERVICE
+        predicates:
+          - path: /demo/**
+        fieters:
+          - StripPrefix=1
